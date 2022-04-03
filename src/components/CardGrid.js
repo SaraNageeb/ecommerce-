@@ -20,14 +20,16 @@ const CardGrid = () => {
   ]
   return (
 
-<Row xs={2} md={4} className="g-4">
-  {Array.from({ length: 8 }).map((cardArray, idx) => (
+<Row xs={3}  md={6} className="g-4">
+  {Array.from({ length: 6 }).map((cardArray, idx) => (
     <Col>
-      <Card>
-        <Card.Img variant="top" src={img1} />
-        <Card.Body>
-         
-        </Card.Body>
+      <Card className="border-0 ">
+        <Card.Img variant="top" className="rounded-pill "src={img1}  />
+        <Card.ImgOverlay className='d-flex align-items-center justify-content-center'>
+    <Card.Title className="text-light"> Card title</Card.Title>
+    
+  </Card.ImgOverlay>
+        
       </Card>
     </Col>
   ))}

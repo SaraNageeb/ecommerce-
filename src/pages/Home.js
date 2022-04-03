@@ -2,17 +2,18 @@ import Navebar from "../components/Navebar"
 import Slideshow from "../components/Slideshow"
 import CardGrid from "../components/CardGrid";
 import img3 from '../assets/card/toyes.jpg';
-import {Container,Row,Col,Card,Nav,Button} from 'react-bootstrap';
+import Footer from "../components/Footer"
+import {Container,Row,Col,Card,Nav,Button,Badge} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
   return (
     <>
     <Navebar/>
-    <Slideshow /> 
+    <Slideshow />  
     <Card className="mt-5">
   <Card.Header>
-    <Nav variant="tabs" defaultActiveKey="#first">
+    <Nav variant="pills" defaultActiveKey="#first">
       <Nav.Item>
         <Nav.Link href="#first">Best Seller</Nav.Link>
       </Nav.Item>
@@ -20,8 +21,8 @@ const Home = () => {
         <Nav.Link href="#link">New Products</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="#" >
-          Sale
+        <Nav.Link href="#disabled" disabled>
+        Sale
         </Nav.Link>
       </Nav.Item>
     </Nav>
@@ -29,11 +30,37 @@ const Home = () => {
   <Card.Body>
     <Card.Title>Special title treatment</Card.Title>
     <Card.Text>
-      With supporting text below as a natural lead-in to additional content.
+      xxxxx
+      <Row xs={3} md={6} className="g-4">
+  {Array.from({ length: 12 }).map((_, idx) => (
+    <Col>
+      <Card>
+        <Card.Img variant="top" src={img3} />
+        <Card.Body>
+          <Card.Title>Card title</Card.Title>
+          <Badge pill bg="secondary">
+    best seller
+  </Badge> 
+          <Card.Text>
+            This is a longer card with supporting text below as a natural
+            
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </Col>
+  ))}
+</Row>
+
+
+
+
+
+
+      sss
     </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
-  </Card.Body>
+   </Card.Body>
 </Card>
+ 
     <Container fluid >
     
     <Row className="mt-5">
@@ -63,7 +90,7 @@ const Home = () => {
         </Col>
         <Col sm={4}>
         <Card className="bg-dark text-white">
-  <Card.Img src={img3} alt="Card image"  height={200}/>
+  <Card.Img src={img3} alt="Card image"  height={200} roundedCircle />
   <Card.ImgOverlay>
     <Card.Title>Card title</Card.Title>
     <Card.Text>
@@ -75,10 +102,10 @@ const Home = () => {
 </Card>
         </Col>
       </Row>
-     
+     <Footer/>
     </Container>
    
-     
+      
     
     </>
   )

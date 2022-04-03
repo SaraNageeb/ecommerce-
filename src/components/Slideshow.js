@@ -18,7 +18,7 @@ const Slideshow = () => {
         className="d-block w-100 "
         src={slider4}
         alt="First slide" 
-        height={400}   
+        height={500}   
         style={{objectFit: "cover"}} 
       />
       <Carousel.Caption>
@@ -31,7 +31,7 @@ const Slideshow = () => {
         className="d-block w-100 "
         src={slider1}
         alt="First slide" 
-        height={400}   
+        height={500}   
         style={{objectFit: "cover"}} 
       />
       <Carousel.Caption>
@@ -44,7 +44,7 @@ const Slideshow = () => {
         className="d-block w-100 "
         src={slider2}
         alt="First slide" 
-        height={400}   
+        height={500}   
         style={{objectFit: "cover"}} 
       />
       <Carousel.Caption>
@@ -57,7 +57,7 @@ const Slideshow = () => {
         className="d-block w-100 "
         src={slider5}
         alt="First slide" 
-        height={400}   
+        height={500}   
         style={{objectFit: "cover"}} 
       />
       <Carousel.Caption>
@@ -70,7 +70,7 @@ const Slideshow = () => {
         className="d-block w-100 "
         src={slider3}
         alt="First slide" 
-        height={400}   
+        height={500}   
         style={{objectFit: "cover"}} 
       />
       <Carousel.Caption>
