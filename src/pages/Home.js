@@ -3,7 +3,7 @@ import Slideshow from "../components/Slideshow"
 import CardGrid from "../components/CardGrid";
 import img3 from '../assets/card/toyes.jpg';
 import Footer from "../components/Footer"
-import {Container,Row,Col,Card,Nav,Button,Badge} from 'react-bootstrap';
+import {Container,Row,Col,Card,Nav,Button,Badge,Breadcrumb,Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
@@ -104,8 +104,196 @@ const Home = () => {
       </Row>
      <Footer/>
     </Container>
-   
+   {//...............................................product page............................
+   }
+      <Navebar/>
+      <Container >
+        <Row>
+      <Breadcrumb className="mt-5">
+  <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+  <Breadcrumb.Item href="https://getbootstrap.com/docs/4.0/components/breadcrumb/">
+    Library
+  </Breadcrumb.Item>
+  <Breadcrumb.Item active>Data</Breadcrumb.Item>
+</Breadcrumb>
+</Row>
+  <Row>
+    <Col>
+    <Image src={img3} width={620} className="m-1"/>
+    <Image src={img3} width={200} className="m-1"/>
+    <Image src={img3} width={200} className="m-1"/>
+    <Image src={img3} width={200} className="m-1"/>
+    </Col>
+    <Col>
+    <Card>
+  <Card.Header>
+    <Nav variant="pills" defaultActiveKey="#first">
+      <Nav.Item>
+        <Nav.Link href="#first">Description</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="#link">Reviws</Nav.Link>
+      </Nav.Item>
       
+    </Nav>
+  </Card.Header>
+  <Card.Body>
+    <Card.Title>Special title treatment</Card.Title>
+    <Card.Text> 
+    <p>  Product name:sssssssssssssssssssss </p>
+    <p>   Product Catagory:Catagory</p>
+     <p> Product discription         </p>
+         <p> Product size</p>
+         <p> Product color</p>
+    <p>  Available colors</p>
+              <p>  red green blue</p>
+    <p>  Price :300Eg</p>
+     <p> Rating 4 stars          </p>
+
+
+ 
+    </Card.Text>
+    <Button variant="primary m-3"> Add To chart</Button>
+    <Button variant="primary"> Buy Now</Button>
+
+  </Card.Body>
+</Card>
+    </Col>
+  </Row>
+  </Container>
+  
+  <Container fluid className="mt-5" style={{ overflowX: "auto"}}>
+  <Row className="d-flex flex-row flex-nowrap" >
+    
+
+
+    <Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={img3}  />
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+
+
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={img3}  />
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+
+
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={img3}  />
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+
+
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={img3}  />
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+
+
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={img3}  />
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+
+
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={img3}  />
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+
+
+
+
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={img3} />
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+
+
+
+
+
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={img3}  />
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+
+
+
+
+<Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={img3}  />
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Button variant="primary">Go somewhere</Button>
+  </Card.Body>
+</Card>
+     
+  </Row>
+</Container>
+
+
     
     </>
   )
