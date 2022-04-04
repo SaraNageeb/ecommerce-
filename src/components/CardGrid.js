@@ -20,7 +20,7 @@ const CardGrid = () => {
   ]
   return (
 
-<Row xs={3}  md={6} className="g-4">
+<Row  xs={3} md={4} lg={6}  className="g-4">
   {Array.from({ length: 6 }).map((cardArray, idx) => (
     <Col>
       <Card className="border-0 ">

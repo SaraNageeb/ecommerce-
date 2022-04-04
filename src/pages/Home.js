@@ -31,7 +31,7 @@ const Home = () => {
     <Card.Title>Special title treatment</Card.Title>
     <Card.Text>
       xxxxx
-      <Row xs={3} md={6} className="g-4">
+      <Row xs={2} md={3} lg={4} 	xl={6}className="g-4">
   {Array.from({ length: 12 }).map((_, idx) => (
     <Col>
       <Card>
