@@ -117,12 +117,16 @@ const Home = () => {
   <Breadcrumb.Item active>Data</Breadcrumb.Item>
 </Breadcrumb>
 </Row>
-  <Row>
-    <Col>
+  <Row xs={1} md={2}>
+    <Col >
+      <Row>
     <Image src={img3} width={620} className="m-1"/>
-    <Image src={img3} width={200} className="m-1"/>
-    <Image src={img3} width={200} className="m-1"/>
-    <Image src={img3} width={200} className="m-1"/>
+    </Row>
+    <Row xs={3}>
+    <Image src={img3} width={200} className=""/>
+    <Image src={img3} width={200} className=""/>
+    <Image src={img3} width={200} className=""/>
+    </Row>
     </Col>
     <Col>
     <Card>
@@ -293,7 +297,8 @@ const Home = () => {
   </Row>
 </Container>
 
-
+bbbbbbbbbbbbbbbbbbbbb
+<Footer/>
     
     </>
   )
